@@ -1,1 +1,12 @@
-# program-tracker
+# Program Tracker #
+ProgramTracker is a Ruby application that allows you to manually track applications on your computer.
+
+## Installation ##
+At the moment, the only way to install this program is to clone down the GitHub repository. You can do this by typing "git clone git@github.com:E-Shiels/program-tracker.git" into the terminal.
+
+## Contributing ##
+Bug reports and pull requests are welcome on GitHub at https://github.com/'E-Shiels'/program-tracker. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+## License ##
+The gem is available as open source under the terms of the MIT License.
+## Code of Conduct ##
+Everyone interacting in the ProgramTracker project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
