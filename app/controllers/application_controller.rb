@@ -9,4 +9,9 @@ class ApplicationController < Sinatra::Base
     set :session_secret, "programtrackingisnosecret"
   end
 
+get '/' do
+  erb :index
+  #Main page
+end
+
 end
