@@ -41,3 +41,23 @@ it up to GitHub.
 - Write a blog post about the project and process.
 
 - When done, submit your GitHub repo's URL, a link to your video demo, and a link to your blog post in the corresponding text boxes in the right rail. Hit "I'm done" to wrap it up.
+
+## My Plan ##
+
+- Start by stubbing out files and application structure.
+
+- Make models.
+
+- Add migrations.
+
+- Add controllers and views, but always showing the data (no control logic).
+
+- Test sign up, and login and logout functions. 
+
+- Add logic for controlling access.
+
+- Add errors/validation on signup/login.
+
+- Add deletion confirmation on program form.
+
+- Add visuals.
