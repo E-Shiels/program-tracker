@@ -1,1 +1,3 @@
- 
+ class ProgramsController < ApplicationController
+
+ end
