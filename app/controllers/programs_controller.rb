@@ -16,7 +16,8 @@ class ProgramsController < ApplicationController
   end
 
   get '/programs/:id/edit' do
-
+    @program = Program.find(params[:id])
+    erb :'programs/edit'
   end
 
   post '/programs' do
