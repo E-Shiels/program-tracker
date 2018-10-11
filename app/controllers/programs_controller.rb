@@ -28,6 +28,8 @@ class ProgramsController < ApplicationController
 
   end
 
-  delete '/programs/:id/delete'
+  delete '/programs/:id/delete' do
+
+  end
 
 end
