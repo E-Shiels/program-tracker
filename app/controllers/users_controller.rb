@@ -1,24 +1,29 @@
 class UsersController < ApplicationController
 
-get '/login' do
 
-end
+  get '/users/:id' do
 
-post '/login' do
+  end
 
-end
+  get '/signup' do
 
-get '/signup' do
+  end
 
-end
+  post '/signup' do
 
-post '/signup' do
+  end
 
-end
+  get '/login' do
 
-get '/logout' do
+  end
 
-end
+  post '/login' do
+
+  end
+
+  get '/logout' do
+
+  end
 
 
 end
