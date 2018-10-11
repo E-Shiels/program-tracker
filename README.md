@@ -1,5 +1,5 @@
 # Program Tracker #
-ProgramTracker is a Ruby application that allows you to manually track applications on your computer.
+ProgramTracker is a Ruby application that allows you to manually track applications on your computer. It is currently unfinished and there is no persistence from one session to another.
 
 ## Installation ##
 At the moment, the only way to install this program is to clone down the GitHub repository. You can do this by typing "git clone git@github.com:E-Shiels/program-tracker.git" into the terminal.
