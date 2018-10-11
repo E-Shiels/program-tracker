@@ -5,7 +5,6 @@ class CreatePrograms < ActiveRecord::Migration[5.2]
       t.string :description
       t.string :category
       t.string :url
-      t.datetime :install_date
       t.integer :user_id
     end
   end
