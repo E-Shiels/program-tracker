@@ -11,7 +11,6 @@ class ApplicationController < Sinatra::Base
 
 get '/' do
   erb :index
-  #Main page
 end
 
 end
