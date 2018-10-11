@@ -27,5 +27,6 @@ class ProgramsController < ApplicationController
 
   end
 
+  delete '/programs/:id/delete'
 
 end
