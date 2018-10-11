@@ -18,7 +18,8 @@ class UsersController < ApplicationController
     if !session[:user_id]
       erb :'users/new'
     else
-      redirect 'users/:id'
+      @user = User.find(params[:id])
+      redirect 'users/:#{@user.id}'
     end
   end
 
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
     else
       @user = User.create(:email => params[:email], :password => params[:password])
       session[:user_id] = @user.id
-      redirect '/programs'
+      redirect '/users/:id'
     end
   end
 
