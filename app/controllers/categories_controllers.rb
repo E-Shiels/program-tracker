@@ -5,36 +5,36 @@ class CategoriesController < ApplicationController
     erb :'categories/index'
   end
 
-  #get '/programs/new' do
-  #  erb :'programs/new'
-  #end
+  get '/categories/new' do
+    erb :'categories/new'
+  end
 
-  #post '/programs' do
-#    @program = Program.create(params['program'])
-#    redirect '/programs/:id'
-#  end
+  post '/categories' do
+    @category = Category.create(params['category'])
+    redirect '/categories/:id'
+  end
 
-#  get '/programs/:id' do
-#    @program = Program.find(params[:id])
-#    erb :'programs/show'
-#  end
-#
-#  get '/programs/:id/edit' do
-#    @program = Program.find(params[:id])
-#    erb :'programs/edit'
-#  end
-#
-#  patch '/programs/:id' do
-#    @program = Program.find_by_id(params[:id])
-#    @program.update(params[:program])
-#    @program.save
-#    redirect to '/programs/#{@program.id}'
-#  end
-#
-#  delete '/programs/:id/delete' do
-#    @program = Program.find_by_id(params[:id])
-#    @program.destroy
-#    redirect '/programs'
-#  end
-#
+  get '/categories/:id' do
+    @category = Category.find(params[:id])
+    erb :'categories/show'
+  end
+
+  get '/categories/:id/edit' do
+    @category = Category.find(params[:id])
+    erb :'categories/edit'
+  end
+
+  patch '/categories/:id' do
+    @category = Category.find_by_id(params[:id])
+    @category.update(params[:program])
+    @category.save
+    redirect to '/categories/#{@category.id}'
+  end
+
+  delete '/categories/:id/delete' do
+    @category = Category.find_by_id(params[:id])
+    @category.destroy
+    redirect '/programs'
+  end
+
 end
