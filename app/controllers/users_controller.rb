@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     if !session[:user_id]
       erb :'users/new'
     else
-      @user = User.find(params[:id])
+      @user = User.find(session[:user_id])
       redirect 'users/:#{@user.id}'
     end
   end
