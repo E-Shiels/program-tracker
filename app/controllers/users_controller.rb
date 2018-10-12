@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   get '/users/:id' do
     if !logged_in?
-      redirect '/index'
+      redirect '/'
     end
 
     @user = User.find_by_id(params[:id])

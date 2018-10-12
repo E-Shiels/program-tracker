@@ -1,2 +1,9 @@
- <h3> You are signed in. </h3>
+ <h2> You are signed in. </h2>
  <h3> Your email is <%=@user.email%>. </h3>
+
+<% if @user.program.length == 1 %>
+ <h4> You have 1 program. </h4>
+ <% else %>
+ <h4> You have <%= @user.program.length %> programs. </h4>
+ <% end %>
+ <h4> <a href="/programs">Click here to view all of your programs.</a> </h4>
