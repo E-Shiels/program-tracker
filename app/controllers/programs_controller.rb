@@ -11,7 +11,7 @@ class ProgramsController < ApplicationController
   end
 
   get '/programs/:id' do
-    @programs = Program.find(params[:id])
+    @program = Program.find(params[:id])
     erb :'programs/show'
   end
 
@@ -23,7 +23,7 @@ class ProgramsController < ApplicationController
   post '/programs' do
     @program = Program.create(params['program'])
     @program.save
-    redirect '/programs/#{@program.id}'
+    redirect '/programs/:id'
   end
 
   patch '/programs/:id' do
