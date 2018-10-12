@@ -1,6 +1,5 @@
 class ProgramsController < ApplicationController
 
-
   get '/programs' do
     @programs = Program.all
     erb :'programs/index'
@@ -8,6 +7,11 @@ class ProgramsController < ApplicationController
 
   get '/programs/new' do
     erb :'programs/new'
+  end
+
+  post '/programs' do
+    @program = Program.create(params['program'])
+    redirect '/programs/:id'
   end
 
   get '/programs/:id' do
@@ -18,12 +22,6 @@ class ProgramsController < ApplicationController
   get '/programs/:id/edit' do
     @program = Program.find(params[:id])
     erb :'programs/edit'
-  end
-
-  post '/programs' do
-    @program = Program.create(params['program'])
-    @program.save
-    redirect '/programs/:id'
   end
 
   patch '/programs/:id' do
