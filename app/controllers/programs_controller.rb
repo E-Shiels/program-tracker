@@ -15,12 +15,12 @@ class ProgramsController < ApplicationController
   end
 
   get '/programs/:id' do
-    @program = Program.find(params[:id])
+    @program = Program.find_by_id(params[:id])
     erb :'programs/show'
   end
 
   get '/programs/:id/edit' do
-    @program = Program.find(params[:id])
+    @program = Program.find_by_id(params[:id])
     erb :'programs/edit'
   end
 
@@ -28,7 +28,7 @@ class ProgramsController < ApplicationController
     @program = Program.find_by_id(params[:id])
     @program.update(params[:program])
     @program.save
-    redirect to '/programs/#{@program.id}'
+    redirect to '/programs/:id'
   end
 
   delete '/programs/:id/delete' do

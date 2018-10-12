@@ -5,7 +5,7 @@ class UsersController < ApplicationController
       redirect '/index'
     end
 
-    @user = User.find(params[:id])
+    @user = User.find_by_id(params[:id])
     if !@user.nil? && @user == current_user
       erb :'users/show'
     else
@@ -17,8 +17,8 @@ class UsersController < ApplicationController
     if !session[:user_id]
       erb :'users/new'
     else
-      @user = User.find(session[:user_id])
-      redirect 'users/#{@user.id}'
+      @user = User.find_by_id(session[:user_id])
+      redirect 'users/:id'
     end
   end
 
@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     else
       @user = User.create(:email => params[:email], :password => params[:password])
       session[:user_id] = @user.id
-      redirect '/users/#{@user.id}'
+      redirect '/users/:id'
     end
   end
 
