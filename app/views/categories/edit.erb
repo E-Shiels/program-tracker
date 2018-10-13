@@ -1,0 +1,8 @@
+<h1> Edit Category </h1>
+
+<form action="/categories/<%=@category.id%>" method="POST">
+  <label for="name">Category Name</label>
+  <input name="name" id="name" value="<%=@category.name%>"> </input>
+
+  <input type="submit" value="Save Changes to Category">
+</form>

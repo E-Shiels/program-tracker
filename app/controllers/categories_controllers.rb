@@ -24,9 +24,9 @@ class CategoriesController < ApplicationController
     erb :'categories/edit'
   end
 
-  patch '/categories/:id' do
+  post '/categories/:id' do
     @category = Category.find_by_id(params[:id])
-    @category.update(params[:program])
+    @category.update(params)
     @category.save
     redirect to '/categories/#{@category.id}'
   end
