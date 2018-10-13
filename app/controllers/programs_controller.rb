@@ -14,6 +14,9 @@ class ProgramsController < ApplicationController
   post '/programs' do
     redirect_if_not_logged_in
     @program = Program.create(params)
+    if @program.install_date.class == DateTime
+    @program.install_date = @program.install_date.to_datetime.strftime("%F")
+  end
     redirect '/programs'
   end
 
