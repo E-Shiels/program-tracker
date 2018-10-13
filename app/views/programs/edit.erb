@@ -1,1 +1,17 @@
- <h1> Edit Program </h1>
+<h1> Edit Program </h1>
+
+<form action="/programs/<%=@program.id%>" method="POST">
+  <label for="name">Program Name</label>
+  <input name="name" id="name" value="<%=@program.name%>"> </input>
+
+  <label for="description">Description</label>
+  <input name="description" id="description" value="<%=@program.description%>"> </input>
+
+  <label for="url">Link</label>
+  <input name="url" id="url" value="<%=@program.url%>"> </input>
+
+  <label for="install_date">Install Date</label>
+  <input name="install_date" id="install_date" value="<%=@program.install_date%>"> </input>
+
+  <input type="submit" value="Save Changes to Program">
+</form>

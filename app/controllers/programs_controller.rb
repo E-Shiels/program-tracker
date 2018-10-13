@@ -20,7 +20,11 @@ class ProgramsController < ApplicationController
   get '/programs/:id' do
     redirect_if_not_logged_in
     @program = Program.find(params[:id])
+    if @program
     erb :'programs/show'
+  else
+    halt 404, "Program not found"
+  end
   end
 
   get '/programs/:id/edit' do
@@ -29,10 +33,10 @@ class ProgramsController < ApplicationController
     erb :'programs/edit'
   end
 
-  patch '/programs/:id' do
+  post '/programs/:id' do
     redirect_if_not_logged_in
     @program = Program.find_by_id(params[:id])
-    @program.update(params[:program])
+    @program.update(params)
     @program.save
     redirect to '/programs/#{@program.id}'
   end
