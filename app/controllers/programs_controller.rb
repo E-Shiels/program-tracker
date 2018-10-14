@@ -17,7 +17,7 @@ class ProgramsController < ApplicationController
     if @program.install_date.class == DateTime
     @program.install_date = @program.install_date.to_datetime.strftime("%F")
   end
-    redirect '/programs'
+    redirect to '/programs/#{@program.id}'
   end
 
   get '/programs/:id' do
@@ -37,7 +37,7 @@ class ProgramsController < ApplicationController
     @program = Program.find_by_id(params[:id])
     @program.update(params)
     @program.save
-    redirect to '/programs/#{@program.id}'
+    redirect to "/programs/#{@program.id}"
   end
 
   delete '/programs/:id/delete' do
