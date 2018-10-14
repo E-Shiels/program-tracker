@@ -11,30 +11,30 @@ class CategoriesController < ApplicationController
 
   post '/categories' do
     @category = Category.create(params['category'])
-    redirect '/categories/:id'
+    redirect to "/categories/#{@category.id}"
   end
 
   get '/categories/:id' do
     @category = Category.find(params[:id])
-    erb :'categories/show'
+    erb :"categories/show"
   end
 
   get '/categories/:id/edit' do
     @category = Category.find(params[:id])
-    erb :'categories/edit'
+    erb :"categories/edit"
   end
 
   post '/categories/:id' do
     @category = Category.find_by_id(params[:id])
     @category.update(params)
     @category.save
-    redirect to '/categories/#{@category.id}'
+    redirect to "/categories/#{@category.id}"
   end
 
   delete '/categories/:id/delete' do
     @category = Category.find_by_id(params[:id])
     @category.destroy
-    redirect '/programs'
+    redirect "/programs"
   end
 
 end
