@@ -18,7 +18,7 @@ class UsersController < ApplicationController
       erb :'users/new'
     else
       @user = User.find_by_id(session[:user_id])
-      redirect 'users/:id'
+      redirect "users/#{@user.id}"
     end
   end
 
@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   end
 
   get '/login' do
-    if !session[:user_id]
+    if !logged_in?
       erb :'users/login'
     else
       redirect '/programs'
