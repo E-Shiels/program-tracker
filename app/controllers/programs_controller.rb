@@ -19,7 +19,7 @@ class ProgramsController < ApplicationController
     else
       @program.install_date = Chronic.parse(@program.install_date)
     end
-    redirect to '/programs/#{@program.id}'
+    redirect to "/programs/#{@program.id}"
   end
 
   get '/programs/:id' do
