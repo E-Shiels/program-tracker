@@ -10,7 +10,4 @@ source 'https://rubygems.org'
   gem 'pry'
   gem 'bcrypt'
   gem 'tux'
-
-  group :test do
-    gem 'capybara'
-  end
+  gem 'chronic'
