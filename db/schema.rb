@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_10_12_180555) do
     t.string "description"
     t.string "category"
     t.string "url"
-    t.datetime "install_date"
+    t.string "install_date"
     t.integer "user_id"
   end
 
