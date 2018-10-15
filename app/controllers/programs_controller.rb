@@ -15,8 +15,10 @@ class ProgramsController < ApplicationController
     redirect_if_not_logged_in
     @program = Program.create(params)
     if @program.install_date.class == DateTime
-    @program.install_date = @program.install_date.to_datetime.strftime("%F")
-  end
+      @program.install_date = @program.install_date.to_datetime.strftime("%F")
+    else
+      @program.install_date = Chronic.parse(@program.install_date)
+    end
     redirect to '/programs/#{@program.id}'
   end
 
