@@ -37,6 +37,7 @@ class ProgramsController < ApplicationController
   get '/programs/:id/edit' do
     redirect_if_not_logged_in
     @program = Program.find(params[:id])
+
     if @program.user_id = current_user.id
     erb :'programs/edit'
   else
