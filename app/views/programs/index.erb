@@ -1,9 +1,12 @@
-  <h1> All Programs </h1>
+<h1> All Programs </h1>
+<table>
 <% @programs.each do |program| %>
-<p><%=program.name%></p>
-<p><%=program.category%></p>
-<p><%=program.description%></p>
-<p><%=program.install_date%></p>
-<p><a href="programs/<%= program.id %>">Full information<a></p>
-<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<tr>
+<td><%=program.name%></td>
+<td><%=program.category%></td>
+<td><%=program.description%></td>
+<td><%=program.install_date%></td>
+<td><a href="programs/<%= program.id %>">Full information<a></td>
+</tr>
 <% end %>
+</table>
