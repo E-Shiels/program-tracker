@@ -1,14 +1,23 @@
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h2, h3, h4 {
 font-family: 'Share Tech Mono', monospace;
+margin-left: 5%;
 }
 
 p {
 font-family: 'Share Tech Mono', monospace;
+margin-left: 5%;
+margin-right: 5%;
 }
 
 input {
@@ -27,6 +36,10 @@ td {
 font-family: 'Share Tech Mono', monospace;
 }
 
+form {
+  margin-left: 5%;  
+}
+
 a#navbar-title {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 1.8em;
@@ -36,6 +49,7 @@ a#navbar-title {
   transform: translateX(-50%);
   color: white;
 }
+
 div.nav-background {
   position: fixed;
   width: 100%;
