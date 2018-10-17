@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 100px;
+}
+
+h2, h3, h4 {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+p {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+input {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+label {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+tr {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+td {
+  font-family: 'Share Tech Mono', monospace;
+}
