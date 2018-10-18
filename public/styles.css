@@ -32,12 +32,30 @@ label {
 font-family: 'Share Tech Mono', monospace;
 }
 
+table {
+border-collapse: collapse;
+border: 2px solid black;
+margin-left: 5%;
+margin-right: 5%;
+}
+
 tr {
 font-family: 'Share Tech Mono', monospace;
 }
 
+th {
+font-family: 'Share Tech Mono', monospace;
+border: 2px solid black;
+font-size: 1.6em;
+padding: 10px;
+text-align: center;
+}
+
 td {
 font-family: 'Share Tech Mono', monospace;
+border: 2px solid black;
+font-size: 1.2em;
+padding: 10px;
 }
 
 form {
