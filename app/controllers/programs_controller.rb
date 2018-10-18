@@ -27,7 +27,7 @@ class ProgramsController < ApplicationController
   get '/programs/:id' do
     redirect_if_not_logged_in
     @program = Program.find(params[:id])
-    if @program.user_id = current_user.id
+    if @program.user_id == current_user.id
       erb :'programs/show'
     else
       redirect to "/programs"
@@ -38,7 +38,7 @@ class ProgramsController < ApplicationController
     redirect_if_not_logged_in
     @program = Program.find(params[:id])
 
-    if @program.user_id = current_user.id
+    if @program.user_id == current_user.id
     erb :'programs/edit'
   else
     redirect to "/programs"
@@ -48,7 +48,8 @@ class ProgramsController < ApplicationController
   post '/programs/:id' do
     redirect_if_not_logged_in
     @program = Program.find_by_id(params[:id])
-    if @program.user_id = current_user.id
+    binding.pry
+    if @program.user_id == current_user.id
     @program.update(params)
     @program.save
     redirect to "/programs/#{@program.id}"
@@ -59,7 +60,7 @@ class ProgramsController < ApplicationController
 
   delete '/programs/:id/delete' do
     @program = Program.find_by_id(params[:id])
-    if @program.user_id = current_user.id
+    if @program.user_id == current_user.id
     @program.destroy
     redirect '/programs'
   else
