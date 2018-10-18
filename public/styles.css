@@ -12,10 +12,13 @@ h1 {
 h2, h3, h4 {
 font-family: 'Share Tech Mono', monospace;
 margin-left: 5%;
+margin-right: 5%;
+font-size: 2em;
+padding-top: 10px;
 }
 
 p {
-font-size: 1em;
+font-size: 1.2em;
 font-family: 'Share Tech Mono', monospace;
 margin-left: 5%;
 margin-right: 5%;
