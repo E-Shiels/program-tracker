@@ -11,3 +11,4 @@ source 'https://rubygems.org'
   gem 'sqlite3'
   gem 'thin'
   gem 'tux'
+  gem "valid_email2"
