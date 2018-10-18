@@ -120,6 +120,11 @@ a.navbar-button {
   border-top-right-radius: 0px;
   text-align: center;
 }
+
+a.navbar-button:hover {
+  background-color: rgb(194, 26, 31);
+}
+
 a.cancel-button {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 1.8em;
