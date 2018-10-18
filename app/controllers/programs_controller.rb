@@ -60,7 +60,6 @@ class ProgramsController < ApplicationController
   post '/programs/:id' do
     redirect_if_not_logged_in
     @program = Program.find_by_id(params[:id])
-    binding.pry
     if @program.user_id == current_user.id
     @program.update(params)
     @program.save
