@@ -99,3 +99,24 @@ div.nav-background {
   max-height: 46px;
   min-height: 40px;
 }
+
+a#navbar-button {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 110%;
+  position: fixed;
+  margin-top: -30px;
+  left: 90%;
+  transform: translateX(-50%);
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  background-color: rgb(212, 30, 35);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  text-align: center;
+}
