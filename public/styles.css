@@ -28,8 +28,15 @@ input {
 font-family: 'Share Tech Mono', monospace;
 }
 
+button {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2em;
+}
+
 label {
 font-family: 'Share Tech Mono', monospace;
+font-size: 1.2em;
+margin-left: 20px;
 }
 
 table {
