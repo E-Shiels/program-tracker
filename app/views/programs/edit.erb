@@ -3,19 +3,25 @@
 
 <form action="/programs/<%=@program.id%>" method="POST">
   <label for="name">Program Name</label>
+  <br>
   <input name="name" id="name" value="<%=@program.name%>"> </input>
-
+  <br>
   <label for="category">Category</label>
+  <br>
   <input name="category" id="category" value="<%=@program.category%>"> </input>
-
+  <br>
   <label for="description">Description</label>
+  <br>
   <input name="description" id="description" value="<%=@program.description%>"> </input>
-
+  <br>
   <label for="url">Link</label>
+  <br>
   <input name="url" id="url" value="<%=@program.url%>"> </input>
-
+  <br>
   <label for="install_date">Install Date</label>
+  <br>
   <input name="install_date" id="install_date" value="<%=@program.install_date%>"> </input>
-
+  <br>
   <input type="submit" value="Save Changes to Program">
 </form>
+  <a href="/programs/<%=@program.id%>" class="cancel-button"> Cancel </a>

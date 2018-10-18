@@ -26,7 +26,7 @@ margin-right: 5%;
 
 input {
 font-family: 'Share Tech Mono', monospace;
-  font-size: 1.2em;
+font-size: 1.2em;
 }
 
 button {
@@ -37,7 +37,7 @@ button {
 label {
 font-family: 'Share Tech Mono', monospace;
 font-size: 1.2em;
-margin-left: 20px;
+font-weight: bold;
 }
 
 table {
@@ -212,6 +212,6 @@ a.new-program-button:hover {
   background-color: rgb(215, 115, 34);
 }
 
-#back-to-list-button:hover {
+#edit-program-button:hover {
   background-color: rgb(212, 30, 35);
 }
