@@ -100,7 +100,7 @@ div.nav-background {
   min-height: 40px;
 }
 
-a#navbar-button {
+a.navbar-button {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 110%;
   position: fixed;
@@ -118,5 +118,17 @@ a#navbar-button {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  text-align: center;
+}
+a.cancel-button {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.8em;
+  display: inline-block;
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  background-color: rgb(255, 38, 44);
+  padding: 1%;
+  border-radius: 10px;
+  margin-left: 5%;
   text-align: center;
 }
