@@ -1,14 +1,14 @@
 <a href="/logout" class="navbar-button"> Sign out </a>
-  <h3>Name: <%= @program.name %> </h3>
+  <h3 style="margin-bottom: -10px;"><b>Name:</b> <%= @program.name %> </h3>
 
-  <p>Category: <%= @program.category %> </p>
+  <p><b>Category:</b> <%= @program.category %> </p>
 
-  <p>Description: <%= @program.description %> </p>
+  <p><b>Description:</b> <%= @program.description %> </p>
 
-  <p>Link: <a href="https://<%=@program.url%>" target="_blank"> <%= @program.url %> </a> </p>
+  <p><b>Link:</b> <a href="https://<%=@program.url%>" target="_blank"> <%= @program.url %> </a> </p>
 
-  <p>Install Date: <%= @program.install_date%> </p>
+  <p><b>Install Date:</b> <%= @program.install_date%> </p>
 
-  <p><a href='/programs/<%=@program.id%>/edit'>Edit this Program</a></p>
+  <p><a href='/programs/<%=@program.id%>/edit' id="edit-program-button">Edit this Program</a></p>
 
-  <p><a href='/programs'>Go Back to Programs List</a></p>
+  <p><a href='/programs' id="back-to-list-button">Go Back to Programs List</a></p>
