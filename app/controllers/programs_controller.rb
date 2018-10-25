@@ -29,7 +29,7 @@ class ProgramsController < ApplicationController
     if Chronic.parse(params[:install_date]).nil?
       @program.install_date = params[:install_date]
     else
-      @program.install_date = Chronic.parse(params[:install_date]).to_datetime.strftime("%F")
+      @program.install_date = Chronic.parse(params[:install_date]).to_datetime.strftime("%d/%%m/%Y")
     end
     @program.user_id = current_user.id
     @program.save
