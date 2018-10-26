@@ -11,6 +11,12 @@
 
   <p><a href='/programs/<%=@program.id%>/edit' id="edit-program-button">Edit this Program</a></p>
 
-  <p><a href='/programs/<%=@program.id%>/delete' id="delete-program-button">Delete this Program</a></p>
+  <form method="post" action="/programs/<%= @program.id%>/delete">
+
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+
+  <input type="submit" value="Delete Program" id="delete-program-button">
+
+  </form>
 
   <p><a href='/programs' id="back-to-list-button">Go Back to Programs List</a></p>
