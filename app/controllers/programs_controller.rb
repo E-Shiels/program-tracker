@@ -73,7 +73,7 @@ class ProgramsController < ApplicationController
     @program = Program.find_by_id(params[:id])
     if @program.user_id == current_user.id
     @program.destroy
-    redirect '/programs'
+    redirect to "/programs"
   else
     redirect to "/programs"
   end
