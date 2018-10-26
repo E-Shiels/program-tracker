@@ -151,20 +151,6 @@ a.navbar-button:hover {
   background-color: rgb(194, 26, 31);
 }
 
-a.cancel-button {
-  font-family: 'Palanquin Dark', sans-serif;
-  font-size: 1.8em;
-  display: inline-block;
-  color: rgb(255, 250, 250);
-  text-decoration: none;
-  background-color: rgb(255, 38, 44);
-  padding: 1%;
-  border-radius: 10px;
-  margin-left: 5%;
-  margin-top: 35px;
-  text-align: center;
-}
-
 a.new-program-button {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 1.8em;
@@ -184,7 +170,7 @@ a.new-program-button:hover {
   background-color: rgb(212, 30, 35);
 }
 
-#edit-program-button {
+.red-button {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 1.8em;
   display: inline-block;
@@ -194,9 +180,10 @@ a.new-program-button:hover {
   padding: 1%;
   border-radius: 10px;
   text-align: center;
+    margin-top: 1%;
 }
 
-#back-to-list-button {
+.orange-button {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 1.8em;
   display: inline-block;
@@ -206,17 +193,11 @@ a.new-program-button:hover {
   padding: 1%;
   border-radius: 10px;
   text-align: center;
+  margin-left: 5%;
+  margin-top: 1%;
 }
 
-#back-to-list-button:hover {
-  background-color: rgb(215, 115, 34);
-}
-
-#edit-program-button:hover {
-  background-color: rgb(212, 30, 35);
-}
-
-#delete-program-button {
+.dark-red-button {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 1.8em;
   display: inline-block;
@@ -226,8 +207,69 @@ a.new-program-button:hover {
   padding: 1%;
   border-radius: 10px;
   text-align: center;
+  margin-top: 1%;
+  margin-left: 5%;
 }
 
-#delete-program-button:hover {
-   background-color: rgb(193, 26, 31);
+.orange-button:hover {
+  background-color: rgb(215, 115, 34);
+}
+
+.red-button:hover {
+  background-color: rgb(212, 30, 35);
+}
+
+.dark-red-button:hover {
+   background-color: rgb(179, 24, 29);
+}
+
+.red-form-button {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.8em;
+  display: inline-block;
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  background-color: rgb(255, 38, 44);
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.orange-form-button {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.8em;
+  display: inline-block;
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  background-color: rgb(255, 134, 38);
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.dark-red-form-button {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.8em;
+  display: inline-block;
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  background-color: rgb(212, 30, 35);
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.orange-form-button:hover {
+  background-color: rgb(215, 115, 34);
+}
+
+.red-form-button:hover {
+  background-color: rgb(212, 30, 35);
+}
+
+.dark-red-form-button:hover {
+   background-color: rgb(179, 24, 29);
 }
