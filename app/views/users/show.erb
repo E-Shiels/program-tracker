@@ -1,11 +1,11 @@
 <a href="/logout" class="navbar-button"> Sign out </a>
 
- <h1> You are signed in. </h1>
- <p> Your email is <b><%=@user.email%></b>. </p>
+<h1> You are signed in. </h1>
+<p> Your email is <b><%=@user.email%></b>. </p>
 
 <% if @user.programs.length == 1 %>
- <p> You have 1 program. </p>
- <% else %>
- <p> You have <b><%= @user.programs.length %></b> programs. </p>
- <% end %>
- <p> <a href="/programs">Click here to view all of your programs and add new ones.</a> </p>
+<p> You have 1 program. </p>
+<% else %>
+<p> You have <b><%= @user.programs.length %></b> programs. </p>
+<% end %>
+<p> <a href="/programs">Click here to view all of your programs and add new ones.</a> </p>
