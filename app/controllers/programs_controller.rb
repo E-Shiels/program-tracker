@@ -15,12 +15,12 @@ class ProgramsController < ApplicationController
     redirect_if_not_logged_in
     @program = Program.new
     @program.name = params[:name]
-    if params[:category].nil? || params[:category].blank?
+    if params[:category].nil? || params[:category].blank? || params[:category].empty?
       @program.category = params[:category]
     else
       @program.category = params[:category].slice(0,1).capitalize + params[:category].slice(1..-1)
     end
-    if params[:description].nil? || params[:description].blank?
+    if params[:description].nil? || params[:description].blank? || params[:description].empty?
       @program.description = params[:description]
     else
       @program.description = params[:description].slice(0,1).capitalize + params[:description].slice(1..-1)
@@ -39,6 +39,7 @@ class ProgramsController < ApplicationController
   get '/programs/:id' do
     redirect_if_not_logged_in
     @program = Program.find(params[:id])
+
     if @program.user_id == current_user.id
       erb :'programs/show'
     else
