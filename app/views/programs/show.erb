@@ -9,13 +9,14 @@
 
   <p><b>Install Date:</b> <%= @program.install_date%> </p>
 
+
   <p><a href='/programs/<%=@program.id%>/edit' class="red-form-button">Edit this Program</a></p>
 
   <form method="post" action="/programs/<%= @program.id%>/delete">
 
-  <input id="hidden" type="hidden" name="_method" value="DELETE">
+      <input id="hidden" type="hidden" name="_method" value="DELETE">
 
-  <input type="submit" value="Delete Program" class="dark-red-form-button">
+      <input type="submit" value="Delete Program" class="dark-red-form-button">
 
   </form>
 
