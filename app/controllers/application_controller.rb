@@ -9,26 +9,26 @@ class ApplicationController < Sinatra::Base
     set :session_secret, "programtrackingisnosecret"
   end
 
-get '/' do
-  erb :index
-end
-
-helpers do
-
-  def logged_in?
-    !!current_user
+  get '/' do
+    erb :index
   end
 
-  def current_user
-    @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
-  end
+  helpers do
 
-  def redirect_if_not_logged_in
-    if !logged_in?
-      redirect to '/login'
+    def logged_in?
+      !!current_user
     end
-  end
 
-end
+    def current_user
+      @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
+    end
+
+    def redirect_if_not_logged_in
+      if !logged_in?
+        redirect to '/login'
+      end
+    end
+
+  end
 
 end

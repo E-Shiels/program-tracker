@@ -10,13 +10,13 @@
     <th>Install Date</th>
     <th>View Full Info</th>
   </thead>
-<% @programs.each do |program| %>
-<tr>
-<td><%=program.name%></td>
-<td><%=program.category%></td>
-<td><%=program.description%></td>
-<td><%=program.install_date%></td>
-<td><a href="programs/<%= program.id %>">Full information<a></td>
-</tr>
-<% end %>
+  <% @programs.each do |program| %>
+  <tr>
+    <td><%=program.name%></td>
+    <td><%=program.category%></td>
+    <td><%=program.description%></td>
+    <td><%=program.install_date%></td>
+    <td><a href="programs/<%= program.id %>">Full information<a></td>
+  </tr>
+  <% end %>
 </table>
